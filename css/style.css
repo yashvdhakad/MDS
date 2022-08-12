@@ -17,12 +17,12 @@ ul {
 }
 
 #navMenu>ul>li {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
     padding: 0 16px;
 }
 
 #navCTA {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
 }
