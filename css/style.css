@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+nav {
+    margin: auto 80px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navMenu>ul>li {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 16px;
+}
+
+#navCTA {
+    font-size: 14px;
+    font-weight: 700;
+}
