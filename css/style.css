@@ -50,7 +50,7 @@ section {
 }
 
 .bg {
-    background: url('../images/bgBody.svg') no-repeat;
+    background: url('../images/bgBody.svg') repeat;
 }
 
 .herobox {
@@ -86,12 +86,6 @@ section {
     margin-top: 16px;
     width: 536px;
 }
-.herobox>h4::after {
-    content: "";
-    background: url(../images/mdsLogo.svg) no-repeat;
-    width: 36px;
-    height: 36px;
-}
 .herobox>a {
     font-size: 1rem;
     font-weight: 700;
@@ -106,7 +100,9 @@ section {
 }
 
 .illustration {
-    background: url(../images/character.svg);
-    width: fit-content;
-    height: fit-content;
+    background: url(../images/character.svg) no-repeat;
+    width: 624px;
+    height: 639px;
+    z-index: -1;
+    margin-top: 80px;
 }
