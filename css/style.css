@@ -461,6 +461,7 @@ section {
 
 #testimonials {
     padding: 160px 0px;
+    height: 100vh;
 }
 
 .carousel {
@@ -476,6 +477,10 @@ section {
     backdrop-filter: blur(8px);
     counter-increment: carousel-cell;
     padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .carousel-cell>h3 {
     font-size: 2.375rem;
@@ -487,24 +492,31 @@ section {
 .clientinfo {
     display: flex;
     flex-direction: row;
-    
+    align-items: flex-start;
 }
 .clientdp {
     background: url(../images/clientdp.svg);
     background-size: cover;
     width: 85px;
     height: 85px;
+    margin-right: 24px;
 }
-
-/* cell number */
-/* .carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-} */
+.name {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+.company {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.location {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
 
 @media screen and (max-width:600px) {
     nav {
