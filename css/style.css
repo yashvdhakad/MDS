@@ -459,6 +459,53 @@ section {
     grid-column: 4/7;
 }
 
+#testimonials {
+    padding: 160px 0px;
+}
+
+.carousel {
+    background: #FAFAFA;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 500px;
+    margin-right: 24px;
+    border-radius: 8px;
+    background: rgba(14, 14, 44, 0.08);
+    backdrop-filter: blur(8px);
+    counter-increment: carousel-cell;
+    padding: 80px 80px;
+}
+.carousel-cell>h3 {
+    font-size: 2.375rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.clientinfo {
+    display: flex;
+    flex-direction: row;
+    
+}
+.clientdp {
+    background: url(../images/clientdp.svg);
+    background-size: cover;
+    width: 85px;
+    height: 85px;
+}
+
+/* cell number */
+/* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} */
+
 @media screen and (max-width:600px) {
     nav {
         padding: 0 24px;
