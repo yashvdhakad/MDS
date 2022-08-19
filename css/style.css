@@ -161,7 +161,7 @@ a {
     text-decoration: none;
 }
 
-#about,
+#aboutus,
 #services,
 #portfolio,
 #contact {
@@ -185,7 +185,7 @@ a {
 }
 
 section {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 #hero {
@@ -198,6 +198,7 @@ section {
     justify-content: space-between;
     padding: 160px 80px;
 }
+
 .textbox {
     width: 50vw;
     padding: 40px;
@@ -209,6 +210,7 @@ section {
     height: fit-content;
     overflow: hidden;
 }
+
 .textbox>p {
     font-size: 0.75rem;
     font-weight: 700;
@@ -216,11 +218,13 @@ section {
     text-transform: uppercase;
     margin-bottom: 8px;
 }
+
 .textbox>h1 {
     font-size: 4.25rem;
     line-height: 1.1;
     letter-spacing: -1px;
 }
+
 .textbox>h4 {
     font-size: 1.75rem;
     letter-spacing: 0px;
@@ -229,6 +233,7 @@ section {
     margin-top: 16px;
     font-weight: 600;
 }
+
 .textbox>a {
     font-size: 1rem;
     font-weight: 700;
@@ -251,7 +256,6 @@ section {
     background: url(../images/character.gif);
     background-size: cover;
     width: 33vw;
-    /* border: 1px solid white; */
 }
 
 #clients {
@@ -263,7 +267,6 @@ section {
 }
 
 .client {
-    /* border: 1px solid white; */
     border-radius: 8px;
     background: rgba(14, 14, 44, 0.08);
     backdrop-filter: blur(8px);
@@ -277,11 +280,13 @@ section {
     padding: 40px;
     height: fit-content;
 }
+
 #client1>h3 {
     font-size: 2.375rem;
     line-height: 1.1;
     letter-spacing: -1px;
 }
+
 #client1>h5 {
     font-size: 1.375rem;
     line-height: 1.1;
@@ -289,6 +294,7 @@ section {
     font-weight: 600;
     margin-top: 16px;
 }
+
 #client1>a {
     font-size: 1rem;
     font-weight: 700;
@@ -304,6 +310,7 @@ section {
 #about {
     padding: 160px 80px;
 }
+
 .aboutbox {
     border-radius: 8px;
     background: rgba(14, 14, 44, 0.08);
@@ -313,12 +320,14 @@ section {
     align-items: center;
     padding: 40px 80px;
 }
+
 .aboutbox>h2 {
     font-size: 3.25rem;
     line-height: 1.1;
     letter-spacing: -1px;
     margin-top: 40px;
 }
+
 .aboutbox>p {
     font-size: 1rem;
     font-weight: 500;
@@ -326,6 +335,7 @@ section {
     margin-top: 24px;
     text-align: center;
 }
+
 .aboutbox>a {
     font-size: 1rem;
     font-weight: 700;
@@ -345,6 +355,7 @@ section {
     flex-wrap: wrap;
     margin-top: 40px;
 }
+
 #box1,
 #box2,
 #box3,
@@ -364,24 +375,141 @@ section {
     gap: 24px;
     padding: 160px 80px;
 }
+
 .service {
-    /* border: 1px solid white; */
     border-radius: 8px;
     background: rgba(14, 14, 44, 0.08);
     backdrop-filter: blur(8px);
 }
+
 #service1 {
     grid-column: 1/5;
     margin-bottom: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+#service1>h2 {
+    font-size: 3.25rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+#service1>p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 24px;
+    width: 60vw;
+}
+
 #service1>a {
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-top: 40px;
+    margin-top: 24px;
     padding: 16px 112px;
     text-align: center;
     text-transform: uppercase;
     border-radius: 8px;
     background: linear-gradient(130deg, #0009E7 0.63%, #000245 92.52%);
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    padding: 160px 80px;
+}
+
+#projects>a {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 16px 112px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: linear-gradient(130deg, #0009E7 0.63%, #000245 92.52%);
+    grid-column: 1/7;
+    margin: 0 25vw;
+}
+
+.project {
+    border-radius: 8px;
+    background: rgba(14, 14, 44, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+#project1 {
+    grid-column: 1/4;
+}
+
+#project2 {
+    grid-column: 4/6;
+}
+
+#project5 {
+    grid-column: 2/4;
+}
+
+#project6 {
+    grid-column: 4/7;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        padding: 0 24px;
+    }
+
+    .menu,
+    .cta {
+        visibility: hidden;
+    }
+
+    #hero,
+    #clients {
+        padding: 120px 24px;
+    }
+
+    #hero {
+        height: 145vh;
+    }
+
+    .textbox {
+        width: fit-content;
+        padding: 24px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textbox>p {
+        font-size: 0.65rem;
+    }
+
+    .textbox>h1 {
+        font-size: 2.6rem;
+    }
+
+    .textbox>h4 {
+        font-size: 1.2rem;
+    }
+
+    .textbox>a {
+        padding: 16px 32px;
+    }
+
+    .bg {
+        background-size: cover;
+    }
+
+    #character {
+        background: url(../images/character.gif);
+        background-size: cover;
+        width: 100vw;
+        height: 50vh;
+        margin-top: 24px
+    }
 }
